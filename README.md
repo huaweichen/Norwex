@@ -1,8 +1,21 @@
 # Test
 
+### Docker
+
+1. RUN: `docker-compose up -d`
+
+1. Frontend: http://localhost:8002/customers
+
+1. Backend: http://localhost:8001/api/customers
+
+1. Backend UnitTest: `docker exec -it norwex_backend_1  ./vendor/bin/phpunit --filter=CustomerOrderControllerTest
+`
+
+---
+
 ### Backend
 
-##### Setup
+##### Manual Setup
 
 1. PHP 7.4.3. 
 
